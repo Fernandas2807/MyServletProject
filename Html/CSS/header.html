@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0%;
+            margin: 0%;
+            box-sizing: border-box;
+        }
+        header{
+            height: 150px;
+            width: 100%;
+            background-color: purple;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        a{
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bolder;
+            position: relative;
+            padding: 10px 0px;
+        }
+        a:after{
+            content: "";
+            height: 5px;
+            width: 0%;
+            background-color: white;
+            position: absolute;
+
+
+            left: 0;
+            bottom: 0;
+            transition: all 0.5s linear 0.1s;
+
+        }
+        a:hover:after{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+<a href="#">HOME</a>
+<a href="#">ONLINE</a>
+<a href="#">OFFLINE</a>
+<a href="#">ABOUT US</a>
+
+    </header>
+</body>
+</html>

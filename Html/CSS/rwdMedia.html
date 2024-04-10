@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        nav{
+            height: 100px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            background-color: yellow;
+        }
+        
+        @media screen and (max-width:400px) {
+            nav{
+                background-color: blue;
+            }
+            
+        }
+        @media screen and (min-width:401px) and (max-width:600px) {
+            nav{
+                background-color: black;
+                color: red;
+            }
+            
+        }
+        @media screen and (min-width:601px) and (max-width:700px) {
+            nav{
+                background-color:green;
+                color: black;
+            }
+            
+        }
+        @media screen and (min-width:701pxpx) {
+            nav{
+                background-color: purple;
+                color:white;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <h2>Home</h2>
+        <h2>service</h2>
+        <h2>perporties</h2>
+        <h2>login</h2>
+        <h2>signin</h2>
+    </nav>
+</body>
+</html>
